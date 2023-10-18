@@ -7,10 +7,12 @@ import ReservationCart from './components/ReservationCart';
 import RestaurantNavBar from './components/RestaurantNavBar';
 import Reviews from './components/Reviews';
 import Title from './components/Title';
+import Head from './head';
 
 const RestaurantDetails = () => {
    return (
       <>
+         <Head />
          <div className="bg-white w-[70%] rounded p-3 shadow">
             <RestaurantNavBar />
             <Title />
