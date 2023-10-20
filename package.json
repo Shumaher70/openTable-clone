@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@next/font": "13.5.5",
+    "@prisma/client": "^5.4.2",
     "@types/node": "20.8.6",
     "@types/react": "18.2.28",
     "@types/react-dom": "18.2.13",
@@ -23,6 +24,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.20",
+    "prisma": "^5.4.2",
     "tailwindcss": "^3.2.4"
   }
 }
