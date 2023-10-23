@@ -13,7 +13,7 @@ export default async function handler(
 ) {
    //   await prisma.table.deleteMany();
    // await prisma.review.deleteMany();
-   await prisma.items.deleteMany();
+   await prisma.item.deleteMany();
    await prisma.restaurant.deleteMany();
    await prisma.location.deleteMany();
    await prisma.cuisine.deleteMany();
@@ -569,7 +569,7 @@ export default async function handler(
    const sofiaId =
       restaurants.find((restaurant) => restaurant.name === 'Sofia')?.id || 1;
 
-   await prisma.items.createMany({
+   await prisma.item.createMany({
       data: [
          {
             name: 'Ghee roast chicken wings',
