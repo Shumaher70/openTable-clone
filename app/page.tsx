@@ -8,6 +8,7 @@ export interface RestaurantCardType {
    main_image: string;
    cuisine: Cuisine;
    location: Location;
+   slug: string;
    price: PRICE;
 }
 
@@ -20,6 +21,7 @@ const fetchRestaurants = async (): Promise<RestaurantCardType[]> => {
          name: true,
          main_image: true,
          cuisine: true,
+         slug: true,
          location: true,
          price: true,
       },
