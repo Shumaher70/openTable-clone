@@ -14,7 +14,7 @@ const RestaurantCard = ({ restaurant }: RestaurantCardProps) => {
             <Image
                src={restaurant.main_image}
                alt="Milestones Grill"
-               className="w-full h-36"
+               className="w-full h-36 object-cover"
                width={0}
                height={0}
                sizes="100vw"
