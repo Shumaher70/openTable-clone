@@ -37,11 +37,11 @@ const SearchSideBar = ({ searchParams, location, cuisine }: SliderBarProps) => {
             <h1 className="mb-2">Region</h1>
             {location.map((location) => (
                <Link
+                  key={location.id}
                   href={{
                      pathname: '/search',
                      query: { ...searchParams, city: location.name },
                   }}
-                  key={location.id}
                   className="font-light text-reg capitalize cursor-pointer flex flex-col"
                >
                   {location.name}
@@ -52,11 +52,11 @@ const SearchSideBar = ({ searchParams, location, cuisine }: SliderBarProps) => {
             <h1 className="mb-2">Cuisine</h1>
             {cuisine.map((cuisine) => (
                <Link
+                  key={cuisine.id}
                   href={{
                      pathname: '/search',
                      query: { ...searchParams, cuisine: cuisine.name },
                   }}
-                  key={cuisine.id}
                   className="font-light text-reg capitalize cursor-pointer flex flex-col"
                >
                   {cuisine.name}
@@ -66,9 +66,10 @@ const SearchSideBar = ({ searchParams, location, cuisine }: SliderBarProps) => {
          <div className="mt-3 pb-4">
             <h1 className="mb-2">Price</h1>
             <div className="flex">
-               {prices.map(({ price, label, className }) => (
+               {prices.map(({ price, label, className }, index) => (
                   <>
                      <Link
+                        key={index}
                         href={{
                            pathname: '/search',
                            query: { ...searchParams, price: price },
