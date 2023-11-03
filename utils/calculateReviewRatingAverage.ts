@@ -6,7 +6,7 @@ const calculateReviewRatingAverage = (reviews: Review[]) => {
       reviews.reduce((sum, review) => {
          return sum + review.rating;
       }, 0) / reviews.length;
-   return calculReview.toFixed(1);
+   return +calculReview.toFixed(1);
 };
 
 export default calculateReviewRatingAverage;
