@@ -1,12 +1,17 @@
+import Image from 'next/image';
+
 const Header = () => {
    return (
       <div>
          <h3 className="font-bold">{`You're almost done!`}</h3>
          <div className="mt-5 flex">
-            <img
+            <Image
                src="https://images.otstatic.com/prod1/49153814/2/medium.jpg"
                alt=""
                className="w-32 h-18 rounded"
+               sizes="100vw"
+               width={0}
+               height={0}
             />
             <div className="ml-4">
                <h1 className="text-3xl font-bold">
